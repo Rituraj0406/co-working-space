@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+.dualbg{
+    background: linear-gradient(100.27deg, #263238 22.66%, #2F4B59 67.67%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-vector{
+    background-image: url('./assets/bhive-landing-image/bPentagon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: initial;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-hexagon{
+    background-image: url('./assets/bhive-landing-image/Vector\ 7.png');
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: bottom; 
+}
+.bg-hexagonBg{
+    background-image: url('./assets/bhive-landing-image/image\ 1936.png');
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: bottom; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
