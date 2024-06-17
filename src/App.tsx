@@ -5,6 +5,7 @@ import WhyChoseUs from './components/WhyChoseUs';
 import DownlaodApp from './components/DownlaodApp';
 import OurSpace from './components/OurSpace';
 import LandingBanner from './components/LandingBanner';
+import CopyRights from './components/Copyrights';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <WhyChoseUs/>
       <OurSpace/>
       <DownlaodApp/>
+      <CopyRights/>
     </>
   );
 }
