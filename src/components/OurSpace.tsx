@@ -30,7 +30,7 @@ const OurSpace: React.FC<OurSpaceProps> = () => {
   useEffect(() => {
     getCurrentPosition()
       .then(position => {
-        console.log('location', userLocation)
+        // console.log('location', userLocation)
         setUserLocation(position);
         const calculatedDistances = data.reduce((acc, center) => {
           const distance = calculateDistance(
