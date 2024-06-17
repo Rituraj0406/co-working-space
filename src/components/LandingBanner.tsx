@@ -4,7 +4,7 @@ import Banner1 from '../assets/bhive-landing-image/Coworking video 1.png';
 
 interface LandingBannerProps {}
 
-const LandingBanner: React.FC<LandingBannerProps> = ({}) => {
+const LandingBanner: React.FC<LandingBannerProps> = () => {
   return (
     <>
         <div className='flex flex-col lg:flex-row justify-between'>

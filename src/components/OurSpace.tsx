@@ -9,12 +9,12 @@ import calculateDistance from '../utils/calculateDistance';
 
 interface OurSpaceProps {}
 
-const OurSpace: React.FC<OurSpaceProps> = ({}) => {
+const OurSpace: React.FC<OurSpaceProps> = () => {
   const [userLocation, setUserLocation] = useState<{ latitude: number, longitude: number } | null>(null);
   const [distances, setDistances] = useState<{ [key: string]: number }>({});
 
   const dispatch = useDispatch<AppDispatch>();
-  const { data, loading, error } = useSelector((state: RootState) => state.data);
+  const { data } = useSelector((state: RootState) => state.data);
 
   useEffect(() => {
     dispatch(fetchData());
@@ -30,6 +30,7 @@ const OurSpace: React.FC<OurSpaceProps> = ({}) => {
   useEffect(() => {
     getCurrentPosition()
       .then(position => {
+        console.log('location', userLocation)
         setUserLocation(position);
         const calculatedDistances = data.reduce((acc, center) => {
           const distance = calculateDistance(
@@ -46,7 +47,7 @@ const OurSpace: React.FC<OurSpaceProps> = ({}) => {
       .catch(error => {
         console.error('Error getting user location:', error);
       });
-  }, [data]);
+  }, [data, userLocation]);
   
   return (
     <>

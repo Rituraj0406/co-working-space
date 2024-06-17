@@ -7,7 +7,7 @@ import '../App.css';
 
 interface DownlaodAppProps {}
 
-const DownlaodApp: React.FC<DownlaodAppProps> = ({}) => {
+const DownlaodApp: React.FC<DownlaodAppProps> = () => {
   return (
     <div className='container mx-auto p-5'>
         <div className='flex justify-between items-center mb-10'>
@@ -27,8 +27,8 @@ const DownlaodApp: React.FC<DownlaodAppProps> = ({}) => {
                 <div className=' basis-3/5'>
                     <p className='text-xl font-medium text-[#605F5F]'>Boost your productivity with the BHIVE Workspace app. Elevate your workspace, collaborate efficiently, and unlock exclusive perks.</p>
                     <div className='flex items-center mt-10'>
-                        <img src={GooglePlay} alt="google" className='mr-8'/>
-                        <img src={AppleStore} alt="apple" />
+                        <img src={GooglePlay} alt="google" className='mr-8 hover:scale-110 transition ease-in-out'/>
+                        <img src={AppleStore} alt="apple" className='mr-8 hover:scale-110 transition ease-in-out'/>
                     </div>
                 </div>
             </div>

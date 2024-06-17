@@ -10,7 +10,7 @@ interface TileCardProps {
 
 const TileCard: React.FC<TileCardProps> = ({ title, imageUrl, className }) => {
   return (
-    <div className={`max-w-sm flex flex-col lg:flex-row lg:justify-start items-center lg:items-center rounded-md lg:rounded-none overflow-hidden shadow-lg lg:shadow-none p-4 lg:p-6 ${className}`}>
+    <div className={`max-w-sm flex flex-col lg:flex-row lg:justify-start items-center lg:items-center rounded-md lg:rounded-none overflow-hidden shadow-lg hover:shadow-xl lg:hover:shadow-none lg:shadow-none p-4 lg:p-6 ${className}`}>
       <img className="w-7 h-7 lg:w-8 lg:h-8 lg:mr-6" src={imageUrl} alt={title} />    
       <div className="mt-2">
         <div className="font-medium lg:font-bold text-sm lg:text-xl mb-2 text-mainColor">{title}</div>

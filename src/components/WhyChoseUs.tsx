@@ -46,7 +46,7 @@ const cardData = [
 
 interface WhyChoseUsProps {}
 
-const WhyChoseUs: React.FC<WhyChoseUsProps> = ({}) => {
+const WhyChoseUs: React.FC<WhyChoseUsProps> = () => {
   return (
     <div className='container mx-auto p-5'>
         <div className='flex justify-between items-center mb-10'>
